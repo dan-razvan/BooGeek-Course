@@ -1,9 +1,14 @@
 .flake{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     background-color: white;
-    position: relative;
+    position: absolute;
 
     border-radius: 100%;
+    color: transparent;
     
 }
+
+/* #flake__1{
+    background-color: aqua;
+} */

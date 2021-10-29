@@ -1,22 +1,26 @@
 //SETTING
-const containerW = 800
+const containerW = 1500
 const containerH = 700
 
 
-let f1 = new Flake(1, 200, 0, 1)
-f1.render(scene)
-f1.fall()
 
-let f2 = new Flake(2, 350, 0, 1.5)
-f2.render(scene)
-f2.fall()
+let count = 1 
 
-// for(let n =1; n <=50; n++){
-//     setTimeout(() => {
-//         let f2 = new Flake(2, randCoord(0, containerW), 0, 2)
-//         f2.render(scene)
-//         f2.fall(containerW, containerH)
+// initial WAVE
+setInterval(() => {
+    if(count < 150 ) {
+        addAnotherFlake()
+    }
+},10)
+
     
-//     },randDelay(5000))
-// }
+
+
+function addAnotherFlake () {
+    count++
+    let scale = randFloat(0.5, 1.5)
+    let f = new Flake(count, randCoord(0, containerW), 0, scale, scale)
+    f.render(scene)
+    f.fall(containerW, containerH, addAnotherFlake)
+}
 

@@ -1,10 +1,9 @@
+
 .form {
     border: 1px solid #999;
     padding: 20px;
 }
-button {
-    border: 15px;
-}
+
 button,
 input {
     padding: 20px;

@@ -1,26 +1,29 @@
 
 class Button {
-    constructor(text, type, action) {
+    constructor(root, text, type, action) {
+        this.root = root
         this.text = text
         this.type = type
-        this.action = function(){
-            console.log("1")
-        }
+        this.action = action
+        this.render()
     }
 
-    render(parrent_id) {
-        // ???
-        // hint: html representation of the button - <button class="???" onclick="???">???</button> 
-        parrent_id.innerHTML += `<button class="success" style="color:red";> OK</button>`
+    render(root) {
+        
+        this.root.innerHTML += `<button class="${this.type}" onclick="${this.action}()">${this.text}</button>`  
     }
-
+   
 }
 
 function okAction() {
+   
     alert("You've accepted")
 }
+
 function cancelAction() {
     alert("You've canceled")
 }
 
-//  ???
+let okButton = new Button (window["actions"], "OK", "success", "okAction")
+
+let cancelButton = new Button (window["actions"], "CANCEL", "danger", "cancelAction")

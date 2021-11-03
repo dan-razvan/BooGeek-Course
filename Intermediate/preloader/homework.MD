@@ -79,3 +79,34 @@ class BasePreloader {
     6. Start a preloader of this type and check it's behaviour, what changed? why? - explain in details!
 
     * The thing that changed here is that now the preloader is setto run forever. This is because the condition was meant to trigger the clearInterval() method, which in turn would cancel the repeating action established by the setInterval() method. Without the condition, the clearInterval() method will never be caller.
+
+
+    7. We will modify the BasePreloader in such a manner that it will indirectly "check" if the descendant implemented the "condition" logic, to do this, add this code
+
+
+     throw new ReferenceError("You must implement the condition() method inside the inheriting class")
+
+
+     inside the "condition" method of the BasePreloader
+
+
+    * I changed the empty condition() method to this:
+
+        condition() {
+            throw new ReferenceError("You must implement the condition() method inside the inheriting class")
+        }
+
+    8. Run the modified code and explain what happens, explain detailed: what is "throw", why we used new ReferenceError and not simply Error? What is ReferenceError?
+
+    * What happens is that the program stops running after throwing the error. The error is defined by the programmer, for the purpose of throwing an exception. In this case we use RefferenceError meaning that the program is refferencing a function that isn't declared. I assume we are using RefferenceError instead of simply using error because we want to be more specific when it comes to throwing errors, so that we instantly know what's going on. In this example it's easier to figure it out, but I guess that when we are handling huge projects this will be very helpful.
+    Bottom line, I am not sure if I used this correctly. I know that we usually have to throw the error in an if statement, but here I really didn't know what condition to use, so it would be really helpful if you could expand on this topic during the meeting. Also I know there is catch, try, finally and I would love to learn more about those also.
+
+    9. Apply the same "pattern" to the other abstract methods that have to be checked for implementation inside the descending classes
+
+     *
+        step() {
+            throw new ReferenceError("You must implement the condition() method inside the inheriting class");
+        }
+        render() {
+            throw new ReferenceError("You must implement the condition() method inside the inheriting class");
+        }

@@ -1,0 +1,13 @@
+body {
+    background-color: #333;
+    color: white;
+    font-size: 100px;
+}
+
+.odd {
+    color: aqua;
+}
+
+.even {
+    color: azure;
+}

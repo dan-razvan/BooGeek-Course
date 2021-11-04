@@ -9,6 +9,12 @@
     
 }
 
-/* #flake__1{
-    background-color: aqua;
-} */
+.flakeColor{
+    background-color: rgb(123, 240, 240);
+}
+
+
+.anotherFlakeColor{
+    background-color: rgb(106, 181, 206);
+}
+

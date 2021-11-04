@@ -1,13 +1,3 @@
-// ! COMPONENT LIFECYCLE
-// ! PROTOTYPING
-// ! DETACHED (headless) APPROACH
-
-/* 
- Flake {}              obj {} DOM () - sau div   ----> Obiectul (componenta) Flake{} e reprezentat de un obiect in DOM
-[INNER LOGIC <------> PRESENTATION LOGIC]
-
-*/
-
 // FLAKE COMPONENT
 class Flake {  
 
@@ -18,18 +8,32 @@ class Flake {
         this.left  = left
         this.speed = speed
         this.size  = size
-        // console.info(`FLAKE ${this.n}: APPEARED`)
-
-
-
-    
+        
     }
+
+    colorful(color){
+
+        switch(color){
+            case 1:
+                return document.querySelector(`#flake__${this.n}`).classList.add("flakeColor")
+                break;
+            case 2:
+                return document.querySelector(`#flake__${this.n}`).classList.add("anotherFlakeColor")
+                break;
+            default:
+                break
+        }
+
+        // if(color == 1){
+        //    return document.querySelector(`#flake__${this.n}`).classList.add("flakeColor")
+        // }else if( color == 3){
+        //     return document.querySelector(`#flake__${this.n}`).classList.add("anotherFlakeColor")
+        // }
+    }
+
     fall(cw, ch, cb) {
          this.timerId = setInterval(()=> {
             this.top += this.speed 
-            // console.log(`FLAKE ${this.n}: FALL`, this) 
-
-
             this.update()
             if(this.top >= ch){
                 this.disappear(cb)
@@ -56,17 +60,3 @@ class Flake {
         root.innerHTML += `<div id="flake__${this.n}" class="flake" style="transform: scale(${this.size});left: ${this.left}px; top: ${this.top}px;">${this.n}</div>`
     }
 }
-
-
-
-/*
-    LIFECYCLE (for a flake)
-
-    * APPEAR
-    |
-    |
-    falling phase
-    |
-    |
-    * DISAPPEAR
-*/

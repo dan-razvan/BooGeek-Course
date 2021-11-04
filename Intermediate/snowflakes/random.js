@@ -9,3 +9,7 @@ function randDelay(delay) {
 function randFloat(min, max) {
     return min+(max-min) * Math.random()
 }
+
+function randColor(){
+    return Math.ceil(3 * Math.random())
+}

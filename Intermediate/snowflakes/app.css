@@ -4,7 +4,7 @@ body {
 
 #scene {
     border: 1px dotted red;
-    width: 1500px;
-    height: 700px;
+    width: 1700px;
+    height: 900px;
     position: relative; /* fix the absolute coords */
 }

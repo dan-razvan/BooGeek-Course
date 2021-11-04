@@ -10,6 +10,7 @@ function randFloat(min, max) {
     return min+(max-min) * Math.random()
 }
 
+//the function that helps with setting the flake color
 function randColor(){
     return Math.ceil(3 * Math.random())
 }

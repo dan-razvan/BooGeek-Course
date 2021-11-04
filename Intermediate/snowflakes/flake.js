@@ -11,24 +11,22 @@ class Flake {
         
     }
 
-    colorful(color){
+    // I added colorful method that takes a random number as parameter and with the switch statement this random number will add 
+    // a different class which will set a different flake color 
+    colorful(num){
+        let flake = document.querySelector(`#flake__${this.n}`)
 
-        switch(color){
+        switch(num){
             case 1:
-                return document.querySelector(`#flake__${this.n}`).classList.add("flakeColor")
+                return flake.classList.add("flakeColor")
                 break;
             case 2:
-                return document.querySelector(`#flake__${this.n}`).classList.add("anotherFlakeColor")
+                return flake.classList.add("anotherFlakeColor")
                 break;
             default:
                 break
         }
 
-        // if(color == 1){
-        //    return document.querySelector(`#flake__${this.n}`).classList.add("flakeColor")
-        // }else if( color == 3){
-        //     return document.querySelector(`#flake__${this.n}`).classList.add("anotherFlakeColor")
-        // }
     }
 
     fall(cw, ch, cb) {

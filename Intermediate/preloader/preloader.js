@@ -133,3 +133,14 @@ class IncompletePreloader extends BasePreloader{
          return `[${this.progress}%]`
     }
 }
+
+///////////////
+
+let pp1 = new ProgressPreloader(window["prel-1"], 200, 10)
+
+
+console.log(pp1.getTimerId())
+
+
+
+let pp2 = new CircularPreloader(window["prel-2"], 500, 250)

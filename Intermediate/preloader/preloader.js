@@ -1,5 +1,5 @@
 class BasePreloader {
-
+    #timerId;
     constructor(rootDiv, interval, speed) {
         this.rootDiv = rootDiv
         this.interval = interval
@@ -11,19 +11,16 @@ class BasePreloader {
         this.onload()
     }
 
-        get timer () {
-            return this.timerId
+        getTimerId () {
+            return this.#timerId
         }
 
-        set timer(timer){
-            this.timerId = timer
-        }
         
         onload() {
-            let timerId = setInterval(() => {
+            this.#timerId = setInterval(() => {
                 this.step()
                 if(this.condition()){
-                    clearInterval(timerId)
+                    clearInterval(this.#timerId)
                 }
                 
                 this.rootDiv.innerHTML = this.render()

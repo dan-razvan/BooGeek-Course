@@ -1,7 +1,7 @@
-let pp1 = new ProgressPreloader(window["prel-1"], 500, 10)
+let pp1 = new ProgressPreloader(window["prel-1"], 200, 10)
 
 
-// pp1.timerId = null
+console.log(pp1.getTimerId())
 
 // console.log(pp1)
 

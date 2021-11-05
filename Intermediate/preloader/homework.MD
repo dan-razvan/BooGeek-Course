@@ -127,3 +127,36 @@ class BasePreloader {
     - we create a preloader object    let p = new ProgressPreloader(....), after which it starts, and somewhere lower in the code by accident the coder writes " if( p.timerId = null ) " - instead of comparison, his code can accidentally make the preloader "forget" it's timer, which will result in an never clearing interval (forever looped timer).
 
     Your job is by using set/get and the encapsulation principle, to make it so the "timerId" property can be set only inside the class (any of the classes), but so it can be ONLY READ from the outside code
+
+
+    * I fixed this by first declaring timerId before the constructor, adding a hashtag in front of it, and not assigning any value to it. Then I also used this.#timerId inside the onload method. I didn't use a setter because we want to keep it read only from the outside of the class.
+
+    class BasePreloader {
+    #timerId;
+    constructor(rootDiv, interval, speed) {
+        this.rootDiv = rootDiv
+        this.interval = interval
+        this.speed = speed
+
+        this.init()
+        this.onload()
+    }
+
+        getTimerId () {
+            return this.#timerId
+        }
+
+
+        onload() {
+            this.#timerId = setInterval(() => {
+                this.step()
+                if(this.condition()){
+                    clearInterval(this.#timerId)
+                }
+
+                this.rootDiv.innerHTML = this.render()
+
+            }, this.interval);
+        }
+
+

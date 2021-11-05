@@ -4,40 +4,51 @@ class BasePreloader {
         this.rootDiv = rootDiv
         this.interval = interval
         this.speed = speed
+
+
+        
         this.init()
         this.onload()
     }
 
-    onload() {
-        this.timerId = setInterval(() => {
-            this.step()
-            if(this.condition()){
-                clearInterval(this.timerId)
-            }
-            
-            this.rootDiv.innerHTML = this.render()
+        get timer () {
+            return this.timerId
+        }
 
-        }, this.interval);
-    }
+        set timer(timer){
+            this.timerId = timer
+        }
+        
+        onload() {
+            let timerId = setInterval(() => {
+                this.step()
+                if(this.condition()){
+                    clearInterval(timerId)
+                }
+                
+                this.rootDiv.innerHTML = this.render()
 
-    // abstract methods
-    condition() {
-        throw new ReferenceError("You must implement the condition() method inside the inheriting class");
-        console.log("1")
-    }
-    step() {
-        throw new ReferenceError("You must implement the condition() method inside the inheriting class")
-    }
-    render() {
-        throw new ReferenceError("You must implement the condition() method inside the inheriting class")
-    }
-    init () {}
+            }, this.interval);
+        }
+
+        // abstract methods
+        condition() {
+            throw new ReferenceError("You must implement the condition() method inside the inheriting class");
+
+        }
+        step() {
+            throw new ReferenceError("You must implement the condition() method inside the inheriting class")
+        }
+        render() {
+            throw new ReferenceError("You must implement the condition() method inside the inheriting class")
+        }
+        init () {}
 
 }
 //////////////////////////////////////////
 class ProgressPreloader extends BasePreloader{
 
-    constructor(rootDiv, interval , speed) {
+    constructor(rootDiv, interval, speed ) {
         super(rootDiv, interval, speed)
     }
 
@@ -45,9 +56,9 @@ class ProgressPreloader extends BasePreloader{
         this.progress = 0
     }
 
-    // condition (){
-    //     return this.progress >= 100
-    // }
+    condition (){
+        return this.progress >= 100
+    }
     step () {
         return this.progress += this.speed
     }
@@ -67,25 +78,33 @@ class CircularPreloader extends BasePreloader{
         
     init() {
         this.duration = 3000
-        // this.frames = ['/', '--', '|', '\\'];
-            this.frames = ['1', '2', '3', '4']
+        this.frames = ['|', '/', '--', '\\'];
+
     }
 
     condition (){
         return this.duration <= 0
     }
+
+    // step () {
+    //     this.duration -= this.decreasedDuration
+    //     let frame = this.frames.pop()
+    //     this.frames.unshift(frame)
+    //     }
+
     step () {
         this.duration -= this.speed
-        // let frame = this.frames.shift()  
-        // this.frames.push(frame)
-        let frame = this.frames[0]
-        for(let i = 0; i< this.frames.length; i++){
-            this.frames[i] = this.frames[i+1]
-        }
-        this.frames[this.frames.length-1] = frame
-
-
+        let frame = this.frames.shift()  
+        this.frames.push(frame)
     }
+
+    // step () {
+    //     this.duration -= this.decreasedDuration
+    //     for(let i = 0; i< this.frames.length; i++){
+    //         this.frames[i] = this.frames[i+1]
+    //     }
+    //     this.frames[this.frames.length-1] = this.frames[0]
+    // }
 
     render() {
         
@@ -98,8 +117,8 @@ class CircularPreloader extends BasePreloader{
 
 class IncompletePreloader extends BasePreloader{
 
-    constructor(rootDiv, interval , speed) {
-        super(rootDiv, interval, speed)
+    constructor(rootDiv, interval,speed) {
+        super(rootDiv, interval,speed)
     }
 
     init() {

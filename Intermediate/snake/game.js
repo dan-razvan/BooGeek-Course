@@ -32,7 +32,7 @@ class Component {
             let x = Object.values(this.frames)
             return x[x.length + key]
         
-        }else if(this.key.length > 0){
+        }else if(typeof(this.key === "string")){
             return this.frames[key]
     
         }
@@ -89,7 +89,7 @@ class Snake extends Component {
         super(0,0,0,0, 0, {x:0, y:0}, rootElement)
         
 
-        this.children.push(new SnakeHead(0, 0, 64, 64,1, { 
+        this.children.push(new SnakeHead(0, 0, 64, 64,"up", { 
                 up: {x: -192, y: 0}, 
                 right: { x: -256, y: 0}, 
                 down: {x: -256, y: -64 }, 
@@ -106,14 +106,12 @@ class Snake extends Component {
     
 
                 
-        this.children.push(new SnakeTail(0, 0, 64, 64,1, { 
+        this.children.push(new SnakeTail(0, 0, 64, 64,"up", { 
             up: {x: -192, y: -128}, 
             right: { x: -256, y: -128}, 
             down: {x: -256, y: -192 }, 
             left: {x: -192, y: -192} }, window["test"]))
 
-    console.log(this.currentFrame)
-    console.log(typeof(this.currentFrame))
 
     }
 
@@ -128,11 +126,11 @@ class Map extends Component {
 
 }
 
-let head = new SnakeHead(0, 0, 64, 64, "left",{ 
-    up: {x: -192, y: 0}, 
-    right: { x: -256, y: 0}, 
-    down: {x: -256, y: -64 }, 
-    left: {x: -192, y: -64} }, window["test"])
+// let head = new SnakeHead(0, 0, 64, 64, "left",{ 
+//     up: {x: -192, y: 0}, 
+//     right: { x: -256, y: 0}, 
+//     down: {x: -256, y: -64 }, 
+//     left: {x: -192, y: -64} }, window["test"])
 //     console.log(head)
 
 
@@ -145,4 +143,4 @@ let head = new SnakeHead(0, 0, 64, 64, "left",{
 //         left: {x: -192, y: -192} }, window["test"]
 //     )
 
-// let snake = new Snake(window["test"])
+let snake = new Snake(window["test"])

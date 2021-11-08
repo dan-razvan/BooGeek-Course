@@ -33,9 +33,9 @@ class Flake {
          this.timerId = setInterval(()=> {
             this.top += this.speed 
             this.update()
-            if(this.top >= ch){
-                this.disappear(cb)
-            }
+            // if(this.top >= ch){
+            //     this.disappear(cb)
+            // }
         }, 20 )
     }
 

@@ -1,16 +1,18 @@
 
 body{
-    background-color: darkslategray;
+    /* background-image: url(images/back.jpeg); */
+    background: darkslategrey;
 }
 
 
 .component {
     width: 64px;
     height: 64px;
-    border: 1px solid black;
+    border: 1px solid none;
 
 
 
-background-image: url(images/snake-graphics.png);
+
+    background-image: url(images/snake-graphics.png);
 
 }

@@ -11,8 +11,8 @@ class Component {
         this.key = key
         
 
-        this.currentFrame = this.getFrame(this.key)
-        // this.currentFrame = this.frames[Object.keys(this.frames)[0]]
+        // this.currentFrame = this.getFrame(this.key)
+        this.currentFrame = this.frames[Object.keys(this.frames)[0]]
         console.log(this.currentFrame)
         
         this.rootElement = rootElement
@@ -32,31 +32,44 @@ class Component {
             let x = Object.values(this.frames)
             return x[x.length + key]
         
-        }else if(typeof(this.key === "string")){
+        }else if(typeof(this.key) === "string"){
+
             return this.frames[key]
     
         }
 
 }
 
-    addChild(obj){
-        this.children.push(obj)
-    }
-    removeChild(){
+    addChild(obj, prop){
+        console.log(this.children.includes(obj))
+
+  
+        if(!this.children.includes(obj[prop]) && obj instanceof Component){
+            this.children.push(obj)
+        }
+       
 
     }
+
+    removeChild(obj, cb){
+        if(obj instanceof Component){
+            let index = this.children.findIndex(cb)
+            this.children.splice(index, o)
+        
+        }
+    }
+
 
     render() {
         
 
-        // HW1: refactor the next 2 lines with destructuring
+    //    let {x: xOffset, y: yOffset} = this.currentFrame
         let xOffset = this.currentFrame.x
         let yOffset = this.currentFrame.y
 
-    //     let a  = Object.keys(this.frames)[1]
-    //     console.log(typeof(a))
 
-    //    let {a: {x: xOffset}, a: {y : yOffset}} = this.frames
+
+
 
         
         this.rootElement.innerHTML += `
@@ -102,8 +115,7 @@ class Snake extends Component {
             hor: {x: -64, y: 0},
             ver: {x: -128, y: -64},
             bl: {x: 0, y: -64} },
-             window["test"]))
-    
+                window["test"]))
 
                 
         this.children.push(new SnakeTail(0, 0, 64, 64,"up", { 
@@ -111,6 +123,7 @@ class Snake extends Component {
             right: { x: -256, y: -128}, 
             down: {x: -256, y: -192 }, 
             left: {x: -192, y: -192} }, window["test"]))
+
 
 
     }
@@ -126,12 +139,12 @@ class Map extends Component {
 
 }
 
-// let head = new SnakeHead(0, 0, 64, 64, "left",{ 
-//     up: {x: -192, y: 0}, 
-//     right: { x: -256, y: 0}, 
-//     down: {x: -256, y: -64 }, 
-//     left: {x: -192, y: -64} }, window["test"])
-//     console.log(head)
+let head = new SnakeHead(0, 0, 64, 64, "up",{ 
+    up: {x: -192, y: 0}, 
+    right: { x: -256, y: 0}, 
+    down: {x: -256, y: -64 }, 
+    left: {x: -192, y: -64} }, window["test"])
+    console.log(head)
 
 
 // let apple = new Apple(0, 0, 64, 64, {default: {x: 0, y: -192}}, window["test"])

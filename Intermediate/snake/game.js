@@ -11,8 +11,8 @@ class Component {
         this.key = key
         
 
-        // this.currentFrame = this.getFrame(this.key)
-        this.currentFrame = this.frames[Object.keys(this.frames)[0]]
+        this.currentFrame = this.getFrame(this.key)
+        // this.currentFrame = this.frames[Object.keys(this.frames)[0]]
         console.log(this.currentFrame)
         
         this.rootElement = rootElement

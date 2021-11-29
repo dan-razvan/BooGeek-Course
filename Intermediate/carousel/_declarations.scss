@@ -1,0 +1,19 @@
+$bgcolor-1: #59022B;
+$bgcolor-2: #73022c;
+$bgcolor-3: #A6032f;
+$bgcolor-4: #898271;
+$bgcolor-5: #1e292f;
+
+
+@mixin b-image($glcolor, $gdcolor, $fcolor) {
+    background-image: 
+        linear-gradient(90deg, $gdcolor, $glcolor),
+        radial-gradient(transparent 40%, $fcolor 42%),
+        radial-gradient(transparent 40%, $fcolor 42%),
+        url(lake.jpeg)
+}
+
+@mixin b-position($position) {
+    background-position: -50px center, top, bottom, $position;
+
+}

@@ -35,8 +35,8 @@ body {
                 @include b-position(-50px * $n center);
 
                 @keyframes slide-#{$n} {
-                    from { @include b-position(-50px * $n center)}
-                    to {@include b-position(-50px * $n -50px center)};
+                    from { @include b-position(-1px * $n center)}
+                    to {@include b-position(-1px * $n -50px center)};
                 }
 
 
@@ -44,7 +44,7 @@ body {
                 animation: slide-#{$n} 5s infinite;
                 
 
-                @if $n <= 6 {
+                @if $n <= 6 { 
                     @include b-image(
                         lighten($lastGColor, $n * 4%), 
                         $lastGColor, 
@@ -77,21 +77,95 @@ body {
 @media only screen and(max-width: 1000px) {
     
 
-    .carousel{
-        width: 100%;
+    .carousel {
+        border: 1px dotted yellow;
+        width: 600px;
+        height: 700px;
     
-        transform: rotate(90deg)
+        position: relative;
+        perspective: 500px;
+    
+        &__slice {
+            width: 500px;         
+            height: 50px;
+    
+            position: absolute;
+            top: calc(50% - 26px);
+            left: 50px;
+        
+            transform-origin: center center -280px;
+            transform: rotateX(90deg);
+                            
+            background-size: 400px 300px, 50px 50px, 50px 50px, 400px auto;
+            background-repeat: repeat-Y, repeat-Y, no-repeat;
+    
+            $lastGColor:#000; 
+            @for $n from 1 through 10 {
+                &:nth-child(#{$n}) {
+                    transform: rotateX($n * 10deg - 50deg); 
+                    @include mb-position(bottom -50px * $n center);   
+    
+                    @keyframes slide-#{$n} {
+                        from { @include mb-position(center 50px * $n)}
+                        to {@include mb-position(-50px * $n -50px center)};
+                    }
 
+                    animation: slide-#{$n} 5s infinite;
+                     
+      
+                    @if $n <= 6 {
+                        @include mb-image(
+                            lighten($lastGColor, $n * 4%), 
+                            $lastGColor, 
+                            lighten($lastGColor, $n * 5%));
+        
+                        $lastGColor: lighten($lastGColor, $n * 3%);
+       
+                    }@else {
+                        @include mb-image(
+                            darken($lastGColor, $n * 2%), 
+                            $lastGColor,    
+                            darken($lastGColor, $n * 2%));
+        
+                        $lastGColor: darken($lastGColor, $n *  2%);
+    
+                    }
+    
+    
+                    
+                background-blend-mode: overlay;
+                       
+                }
+            }
+            
+        
+        }
+        
     }
+
+
 }
-@media only screen and(min-width: 1001px) {
+
+
+
+// @media only screen and(max-width: 1000px) {
     
 
-    .carousel{
-        width: 100%;
+//     .carousel{
+//         width: 100%;
+    
+//         transform: rotate(90deg)
+
+//     }
+// }
+// @media only screen and(min-width: 1001px) {
+    
+
+//     .carousel{
+//         width: 100%;
 
 
-    }
-}
+//     }
+// }
 
 

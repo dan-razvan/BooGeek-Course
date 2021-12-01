@@ -5,15 +5,28 @@ $bgcolor-4: #898271;
 $bgcolor-5: #1e292f;
 
 
+
 @mixin b-image($glcolor, $gdcolor, $fcolor) {
     background-image: 
         linear-gradient(90deg, $gdcolor, $glcolor),
         radial-gradient(transparent 40%, $fcolor 42%),
         radial-gradient(transparent 40%, $fcolor 42%),
-        url(lake.jpeg)
+        url(night-sky.jpg) 
 }
 
 @mixin b-position($position) {
-    background-position: -50px center, top, bottom, $position;
+    background-position:-50px center, top, bottom, $position;
 
+}
+
+@mixin mb-position($mposition) {
+    background-position: center, left, right, $mposition;
+}
+ 
+@mixin mb-image($glcolor, $gdcolor, $fcolor) {
+    background-image: 
+        linear-gradient(0deg, $gdcolor, $glcolor),
+        radial-gradient(transparent 40%, $fcolor 42%),
+        radial-gradient(transparent 40%, $fcolor 42%),
+        url(night-sky.jpg)   
 }

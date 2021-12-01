@@ -31,26 +31,26 @@ body {
   background-position: -50px center, top, bottom, -50px center;
   -webkit-animation: slide-1 5s infinite;
           animation: slide-1 5s infinite;
-  background-image: -webkit-gradient(linear, left top, right top, from(#000), to(#0a0a0a)), radial-gradient(transparent 40%, #0d0d0d 42%), radial-gradient(transparent 40%, #0d0d0d 42%), url(lake.jpeg);
-  background-image: linear-gradient(90deg, #000, #0a0a0a), radial-gradient(transparent 40%, #0d0d0d 42%), radial-gradient(transparent 40%, #0d0d0d 42%), url(lake.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#000), to(#0a0a0a)), radial-gradient(transparent 40%, #0d0d0d 42%), radial-gradient(transparent 40%, #0d0d0d 42%), url(night-sky.jpg);
+  background-image: linear-gradient(90deg, #000, #0a0a0a), radial-gradient(transparent 40%, #0d0d0d 42%), radial-gradient(transparent 40%, #0d0d0d 42%), url(night-sky.jpg);
   background-blend-mode: overlay;
 }
 
 @-webkit-keyframes slide-1 {
   from {
-    background-position: -50px center, top, bottom, -50px center;
+    background-position: -50px center, top, bottom, -1px center;
   }
   to {
-    background-position: -50px center, top, bottom, -50px -50px center;
+    background-position: -50px center, top, bottom, -1px -50px center;
   }
 }
 
 @keyframes slide-1 {
   from {
-    background-position: -50px center, top, bottom, -50px center;
+    background-position: -50px center, top, bottom, -1px center;
   }
   to {
-    background-position: -50px center, top, bottom, -50px -50px center;
+    background-position: -50px center, top, bottom, -1px -50px center;
   }
 }
 
@@ -60,26 +60,26 @@ body {
   background-position: -50px center, top, bottom, -100px center;
   -webkit-animation: slide-2 5s infinite;
           animation: slide-2 5s infinite;
-  background-image: -webkit-gradient(linear, left top, right top, from(#080808), to(#1c1c1c)), radial-gradient(transparent 40%, #212121 42%), radial-gradient(transparent 40%, #212121 42%), url(lake.jpeg);
-  background-image: linear-gradient(90deg, #080808, #1c1c1c), radial-gradient(transparent 40%, #212121 42%), radial-gradient(transparent 40%, #212121 42%), url(lake.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#080808), to(#1c1c1c)), radial-gradient(transparent 40%, #212121 42%), radial-gradient(transparent 40%, #212121 42%), url(night-sky.jpg);
+  background-image: linear-gradient(90deg, #080808, #1c1c1c), radial-gradient(transparent 40%, #212121 42%), radial-gradient(transparent 40%, #212121 42%), url(night-sky.jpg);
   background-blend-mode: overlay;
 }
 
 @-webkit-keyframes slide-2 {
   from {
-    background-position: -50px center, top, bottom, -100px center;
+    background-position: -50px center, top, bottom, -2px center;
   }
   to {
-    background-position: -50px center, top, bottom, -100px -50px center;
+    background-position: -50px center, top, bottom, -2px -50px center;
   }
 }
 
 @keyframes slide-2 {
   from {
-    background-position: -50px center, top, bottom, -100px center;
+    background-position: -50px center, top, bottom, -2px center;
   }
   to {
-    background-position: -50px center, top, bottom, -100px -50px center;
+    background-position: -50px center, top, bottom, -2px -50px center;
   }
 }
 
@@ -89,26 +89,26 @@ body {
   background-position: -50px center, top, bottom, -150px center;
   -webkit-animation: slide-3 5s infinite;
           animation: slide-3 5s infinite;
-  background-image: -webkit-gradient(linear, left top, right top, from(#171717), to(#363636)), radial-gradient(transparent 40%, #3d3d3d 42%), radial-gradient(transparent 40%, #3d3d3d 42%), url(lake.jpeg);
-  background-image: linear-gradient(90deg, #171717, #363636), radial-gradient(transparent 40%, #3d3d3d 42%), radial-gradient(transparent 40%, #3d3d3d 42%), url(lake.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#171717), to(#363636)), radial-gradient(transparent 40%, #3d3d3d 42%), radial-gradient(transparent 40%, #3d3d3d 42%), url(night-sky.jpg);
+  background-image: linear-gradient(90deg, #171717, #363636), radial-gradient(transparent 40%, #3d3d3d 42%), radial-gradient(transparent 40%, #3d3d3d 42%), url(night-sky.jpg);
   background-blend-mode: overlay;
 }
 
 @-webkit-keyframes slide-3 {
   from {
-    background-position: -50px center, top, bottom, -150px center;
+    background-position: -50px center, top, bottom, -3px center;
   }
   to {
-    background-position: -50px center, top, bottom, -150px -50px center;
+    background-position: -50px center, top, bottom, -3px -50px center;
   }
 }
 
 @keyframes slide-3 {
   from {
-    background-position: -50px center, top, bottom, -150px center;
+    background-position: -50px center, top, bottom, -3px center;
   }
   to {
-    background-position: -50px center, top, bottom, -150px -50px center;
+    background-position: -50px center, top, bottom, -3px -50px center;
   }
 }
 
@@ -118,26 +118,26 @@ body {
   background-position: -50px center, top, bottom, -200px center;
   -webkit-animation: slide-4 5s infinite;
           animation: slide-4 5s infinite;
-  background-image: -webkit-gradient(linear, left top, right top, from(#2e2e2e), to(#575757)), radial-gradient(transparent 40%, #616161 42%), radial-gradient(transparent 40%, #616161 42%), url(lake.jpeg);
-  background-image: linear-gradient(90deg, #2e2e2e, #575757), radial-gradient(transparent 40%, #616161 42%), radial-gradient(transparent 40%, #616161 42%), url(lake.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e2e2e), to(#575757)), radial-gradient(transparent 40%, #616161 42%), radial-gradient(transparent 40%, #616161 42%), url(night-sky.jpg);
+  background-image: linear-gradient(90deg, #2e2e2e, #575757), radial-gradient(transparent 40%, #616161 42%), radial-gradient(transparent 40%, #616161 42%), url(night-sky.jpg);
   background-blend-mode: overlay;
 }
 
 @-webkit-keyframes slide-4 {
   from {
-    background-position: -50px center, top, bottom, -200px center;
+    background-position: -50px center, top, bottom, -4px center;
   }
   to {
-    background-position: -50px center, top, bottom, -200px -50px center;
+    background-position: -50px center, top, bottom, -4px -50px center;
   }
 }
 
 @keyframes slide-4 {
   from {
-    background-position: -50px center, top, bottom, -200px center;
+    background-position: -50px center, top, bottom, -4px center;
   }
   to {
-    background-position: -50px center, top, bottom, -200px -50px center;
+    background-position: -50px center, top, bottom, -4px -50px center;
   }
 }
 
@@ -147,26 +147,26 @@ body {
   background-position: -50px center, top, bottom, -250px center;
   -webkit-animation: slide-5 5s infinite;
           animation: slide-5 5s infinite;
-  background-image: -webkit-gradient(linear, left top, right top, from(#4d4d4d), to(gray)), radial-gradient(transparent 40%, #8c8c8c 42%), radial-gradient(transparent 40%, #8c8c8c 42%), url(lake.jpeg);
-  background-image: linear-gradient(90deg, #4d4d4d, gray), radial-gradient(transparent 40%, #8c8c8c 42%), radial-gradient(transparent 40%, #8c8c8c 42%), url(lake.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4d4d4d), to(gray)), radial-gradient(transparent 40%, #8c8c8c 42%), radial-gradient(transparent 40%, #8c8c8c 42%), url(night-sky.jpg);
+  background-image: linear-gradient(90deg, #4d4d4d, gray), radial-gradient(transparent 40%, #8c8c8c 42%), radial-gradient(transparent 40%, #8c8c8c 42%), url(night-sky.jpg);
   background-blend-mode: overlay;
 }
 
 @-webkit-keyframes slide-5 {
   from {
-    background-position: -50px center, top, bottom, -250px center;
+    background-position: -50px center, top, bottom, -5px center;
   }
   to {
-    background-position: -50px center, top, bottom, -250px -50px center;
+    background-position: -50px center, top, bottom, -5px -50px center;
   }
 }
 
 @keyframes slide-5 {
   from {
-    background-position: -50px center, top, bottom, -250px center;
+    background-position: -50px center, top, bottom, -5px center;
   }
   to {
-    background-position: -50px center, top, bottom, -250px -50px center;
+    background-position: -50px center, top, bottom, -5px -50px center;
   }
 }
 
@@ -176,26 +176,26 @@ body {
   background-position: -50px center, top, bottom, -300px center;
   -webkit-animation: slide-6 5s infinite;
           animation: slide-6 5s infinite;
-  background-image: -webkit-gradient(linear, left top, right top, from(#737373), to(#b0b0b0)), radial-gradient(transparent 40%, #bfbfbf 42%), radial-gradient(transparent 40%, #bfbfbf 42%), url(lake.jpeg);
-  background-image: linear-gradient(90deg, #737373, #b0b0b0), radial-gradient(transparent 40%, #bfbfbf 42%), radial-gradient(transparent 40%, #bfbfbf 42%), url(lake.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#737373), to(#b0b0b0)), radial-gradient(transparent 40%, #bfbfbf 42%), radial-gradient(transparent 40%, #bfbfbf 42%), url(night-sky.jpg);
+  background-image: linear-gradient(90deg, #737373, #b0b0b0), radial-gradient(transparent 40%, #bfbfbf 42%), radial-gradient(transparent 40%, #bfbfbf 42%), url(night-sky.jpg);
   background-blend-mode: overlay;
 }
 
 @-webkit-keyframes slide-6 {
   from {
-    background-position: -50px center, top, bottom, -300px center;
+    background-position: -50px center, top, bottom, -6px center;
   }
   to {
-    background-position: -50px center, top, bottom, -300px -50px center;
+    background-position: -50px center, top, bottom, -6px -50px center;
   }
 }
 
 @keyframes slide-6 {
   from {
-    background-position: -50px center, top, bottom, -300px center;
+    background-position: -50px center, top, bottom, -6px center;
   }
   to {
-    background-position: -50px center, top, bottom, -300px -50px center;
+    background-position: -50px center, top, bottom, -6px -50px center;
   }
 }
 
@@ -205,26 +205,26 @@ body {
   background-position: -50px center, top, bottom, -350px center;
   -webkit-animation: slide-7 5s infinite;
           animation: slide-7 5s infinite;
-  background-image: -webkit-gradient(linear, left top, right top, from(#a1a1a1), to(#7d7d7d)), radial-gradient(transparent 40%, #7d7d7d 42%), radial-gradient(transparent 40%, #7d7d7d 42%), url(lake.jpeg);
-  background-image: linear-gradient(90deg, #a1a1a1, #7d7d7d), radial-gradient(transparent 40%, #7d7d7d 42%), radial-gradient(transparent 40%, #7d7d7d 42%), url(lake.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#a1a1a1), to(#7d7d7d)), radial-gradient(transparent 40%, #7d7d7d 42%), radial-gradient(transparent 40%, #7d7d7d 42%), url(night-sky.jpg);
+  background-image: linear-gradient(90deg, #a1a1a1, #7d7d7d), radial-gradient(transparent 40%, #7d7d7d 42%), radial-gradient(transparent 40%, #7d7d7d 42%), url(night-sky.jpg);
   background-blend-mode: overlay;
 }
 
 @-webkit-keyframes slide-7 {
   from {
-    background-position: -50px center, top, bottom, -350px center;
+    background-position: -50px center, top, bottom, -7px center;
   }
   to {
-    background-position: -50px center, top, bottom, -350px -50px center;
+    background-position: -50px center, top, bottom, -7px -50px center;
   }
 }
 
 @keyframes slide-7 {
   from {
-    background-position: -50px center, top, bottom, -350px center;
+    background-position: -50px center, top, bottom, -7px center;
   }
   to {
-    background-position: -50px center, top, bottom, -350px -50px center;
+    background-position: -50px center, top, bottom, -7px -50px center;
   }
 }
 
@@ -234,26 +234,26 @@ body {
   background-position: -50px center, top, bottom, -400px center;
   -webkit-animation: slide-8 5s infinite;
           animation: slide-8 5s infinite;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7d7d7d), to(#545454)), radial-gradient(transparent 40%, #545454 42%), radial-gradient(transparent 40%, #545454 42%), url(lake.jpeg);
-  background-image: linear-gradient(90deg, #7d7d7d, #545454), radial-gradient(transparent 40%, #545454 42%), radial-gradient(transparent 40%, #545454 42%), url(lake.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#7d7d7d), to(#545454)), radial-gradient(transparent 40%, #545454 42%), radial-gradient(transparent 40%, #545454 42%), url(night-sky.jpg);
+  background-image: linear-gradient(90deg, #7d7d7d, #545454), radial-gradient(transparent 40%, #545454 42%), radial-gradient(transparent 40%, #545454 42%), url(night-sky.jpg);
   background-blend-mode: overlay;
 }
 
 @-webkit-keyframes slide-8 {
   from {
-    background-position: -50px center, top, bottom, -400px center;
+    background-position: -50px center, top, bottom, -8px center;
   }
   to {
-    background-position: -50px center, top, bottom, -400px -50px center;
+    background-position: -50px center, top, bottom, -8px -50px center;
   }
 }
 
 @keyframes slide-8 {
   from {
-    background-position: -50px center, top, bottom, -400px center;
+    background-position: -50px center, top, bottom, -8px center;
   }
   to {
-    background-position: -50px center, top, bottom, -400px -50px center;
+    background-position: -50px center, top, bottom, -8px -50px center;
   }
 }
 
@@ -263,26 +263,26 @@ body {
   background-position: -50px center, top, bottom, -450px center;
   -webkit-animation: slide-9 5s infinite;
           animation: slide-9 5s infinite;
-  background-image: -webkit-gradient(linear, left top, right top, from(#545454), to(#262626)), radial-gradient(transparent 40%, #262626 42%), radial-gradient(transparent 40%, #262626 42%), url(lake.jpeg);
-  background-image: linear-gradient(90deg, #545454, #262626), radial-gradient(transparent 40%, #262626 42%), radial-gradient(transparent 40%, #262626 42%), url(lake.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#545454), to(#262626)), radial-gradient(transparent 40%, #262626 42%), radial-gradient(transparent 40%, #262626 42%), url(night-sky.jpg);
+  background-image: linear-gradient(90deg, #545454, #262626), radial-gradient(transparent 40%, #262626 42%), radial-gradient(transparent 40%, #262626 42%), url(night-sky.jpg);
   background-blend-mode: overlay;
 }
 
 @-webkit-keyframes slide-9 {
   from {
-    background-position: -50px center, top, bottom, -450px center;
+    background-position: -50px center, top, bottom, -9px center;
   }
   to {
-    background-position: -50px center, top, bottom, -450px -50px center;
+    background-position: -50px center, top, bottom, -9px -50px center;
   }
 }
 
 @keyframes slide-9 {
   from {
-    background-position: -50px center, top, bottom, -450px center;
+    background-position: -50px center, top, bottom, -9px center;
   }
   to {
-    background-position: -50px center, top, bottom, -450px -50px center;
+    background-position: -50px center, top, bottom, -9px -50px center;
   }
 }
 
@@ -292,40 +292,310 @@ body {
   background-position: -50px center, top, bottom, -500px center;
   -webkit-animation: slide-10 5s infinite;
           animation: slide-10 5s infinite;
-  background-image: -webkit-gradient(linear, left top, right top, from(#262626), to(black)), radial-gradient(transparent 40%, black 42%), radial-gradient(transparent 40%, black 42%), url(lake.jpeg);
-  background-image: linear-gradient(90deg, #262626, black), radial-gradient(transparent 40%, black 42%), radial-gradient(transparent 40%, black 42%), url(lake.jpeg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#262626), to(black)), radial-gradient(transparent 40%, black 42%), radial-gradient(transparent 40%, black 42%), url(night-sky.jpg);
+  background-image: linear-gradient(90deg, #262626, black), radial-gradient(transparent 40%, black 42%), radial-gradient(transparent 40%, black 42%), url(night-sky.jpg);
   background-blend-mode: overlay;
 }
 
 @-webkit-keyframes slide-10 {
   from {
-    background-position: -50px center, top, bottom, -500px center;
+    background-position: -50px center, top, bottom, -10px center;
   }
   to {
-    background-position: -50px center, top, bottom, -500px -50px center;
+    background-position: -50px center, top, bottom, -10px -50px center;
   }
 }
 
 @keyframes slide-10 {
   from {
-    background-position: -50px center, top, bottom, -500px center;
+    background-position: -50px center, top, bottom, -10px center;
   }
   to {
-    background-position: -50px center, top, bottom, -500px -50px center;
+    background-position: -50px center, top, bottom, -10px -50px center;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .carousel {
-    width: 100%;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    border: 1px dotted yellow;
+    width: 600px;
+    height: 700px;
+    position: relative;
+    -webkit-perspective: 500px;
+            perspective: 500px;
   }
-}
-
-@media only screen and (min-width: 1001px) {
-  .carousel {
-    width: 100%;
+  .carousel__slice {
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 26px);
+    left: 50px;
+    -webkit-transform-origin: center center -280px;
+            transform-origin: center center -280px;
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    background-size: 400px 300px, 50px 50px, 50px 50px, 400px auto;
+    background-repeat: repeat-Y, repeat-Y, no-repeat;
+  }
+  .carousel__slice:nth-child(1) {
+    -webkit-transform: rotateX(-40deg);
+            transform: rotateX(-40deg);
+    background-position: center, left, right, bottom -50px center;
+    -webkit-animation: slide-1 5s infinite;
+            animation: slide-1 5s infinite;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#000), to(#0a0a0a)), radial-gradient(transparent 40%, #0d0d0d 42%), radial-gradient(transparent 40%, #0d0d0d 42%), url(night-sky.jpg);
+    background-image: linear-gradient(0deg, #000, #0a0a0a), radial-gradient(transparent 40%, #0d0d0d 42%), radial-gradient(transparent 40%, #0d0d0d 42%), url(night-sky.jpg);
+    background-blend-mode: overlay;
+  }
+  @-webkit-keyframes slide-1 {
+    from {
+      background-position: center, left, right, center 50px;
+    }
+    to {
+      background-position: center, left, right, -50px -50px center;
+    }
+  }
+  @keyframes slide-1 {
+    from {
+      background-position: center, left, right, center 50px;
+    }
+    to {
+      background-position: center, left, right, -50px -50px center;
+    }
+  }
+  .carousel__slice:nth-child(2) {
+    -webkit-transform: rotateX(-30deg);
+            transform: rotateX(-30deg);
+    background-position: center, left, right, bottom -100px center;
+    -webkit-animation: slide-2 5s infinite;
+            animation: slide-2 5s infinite;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#080808), to(#1c1c1c)), radial-gradient(transparent 40%, #212121 42%), radial-gradient(transparent 40%, #212121 42%), url(night-sky.jpg);
+    background-image: linear-gradient(0deg, #080808, #1c1c1c), radial-gradient(transparent 40%, #212121 42%), radial-gradient(transparent 40%, #212121 42%), url(night-sky.jpg);
+    background-blend-mode: overlay;
+  }
+  @-webkit-keyframes slide-2 {
+    from {
+      background-position: center, left, right, center 100px;
+    }
+    to {
+      background-position: center, left, right, -100px -50px center;
+    }
+  }
+  @keyframes slide-2 {
+    from {
+      background-position: center, left, right, center 100px;
+    }
+    to {
+      background-position: center, left, right, -100px -50px center;
+    }
+  }
+  .carousel__slice:nth-child(3) {
+    -webkit-transform: rotateX(-20deg);
+            transform: rotateX(-20deg);
+    background-position: center, left, right, bottom -150px center;
+    -webkit-animation: slide-3 5s infinite;
+            animation: slide-3 5s infinite;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#171717), to(#363636)), radial-gradient(transparent 40%, #3d3d3d 42%), radial-gradient(transparent 40%, #3d3d3d 42%), url(night-sky.jpg);
+    background-image: linear-gradient(0deg, #171717, #363636), radial-gradient(transparent 40%, #3d3d3d 42%), radial-gradient(transparent 40%, #3d3d3d 42%), url(night-sky.jpg);
+    background-blend-mode: overlay;
+  }
+  @-webkit-keyframes slide-3 {
+    from {
+      background-position: center, left, right, center 150px;
+    }
+    to {
+      background-position: center, left, right, -150px -50px center;
+    }
+  }
+  @keyframes slide-3 {
+    from {
+      background-position: center, left, right, center 150px;
+    }
+    to {
+      background-position: center, left, right, -150px -50px center;
+    }
+  }
+  .carousel__slice:nth-child(4) {
+    -webkit-transform: rotateX(-10deg);
+            transform: rotateX(-10deg);
+    background-position: center, left, right, bottom -200px center;
+    -webkit-animation: slide-4 5s infinite;
+            animation: slide-4 5s infinite;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#2e2e2e), to(#575757)), radial-gradient(transparent 40%, #616161 42%), radial-gradient(transparent 40%, #616161 42%), url(night-sky.jpg);
+    background-image: linear-gradient(0deg, #2e2e2e, #575757), radial-gradient(transparent 40%, #616161 42%), radial-gradient(transparent 40%, #616161 42%), url(night-sky.jpg);
+    background-blend-mode: overlay;
+  }
+  @-webkit-keyframes slide-4 {
+    from {
+      background-position: center, left, right, center 200px;
+    }
+    to {
+      background-position: center, left, right, -200px -50px center;
+    }
+  }
+  @keyframes slide-4 {
+    from {
+      background-position: center, left, right, center 200px;
+    }
+    to {
+      background-position: center, left, right, -200px -50px center;
+    }
+  }
+  .carousel__slice:nth-child(5) {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    background-position: center, left, right, bottom -250px center;
+    -webkit-animation: slide-5 5s infinite;
+            animation: slide-5 5s infinite;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#4d4d4d), to(gray)), radial-gradient(transparent 40%, #8c8c8c 42%), radial-gradient(transparent 40%, #8c8c8c 42%), url(night-sky.jpg);
+    background-image: linear-gradient(0deg, #4d4d4d, gray), radial-gradient(transparent 40%, #8c8c8c 42%), radial-gradient(transparent 40%, #8c8c8c 42%), url(night-sky.jpg);
+    background-blend-mode: overlay;
+  }
+  @-webkit-keyframes slide-5 {
+    from {
+      background-position: center, left, right, center 250px;
+    }
+    to {
+      background-position: center, left, right, -250px -50px center;
+    }
+  }
+  @keyframes slide-5 {
+    from {
+      background-position: center, left, right, center 250px;
+    }
+    to {
+      background-position: center, left, right, -250px -50px center;
+    }
+  }
+  .carousel__slice:nth-child(6) {
+    -webkit-transform: rotateX(10deg);
+            transform: rotateX(10deg);
+    background-position: center, left, right, bottom -300px center;
+    -webkit-animation: slide-6 5s infinite;
+            animation: slide-6 5s infinite;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#737373), to(#b0b0b0)), radial-gradient(transparent 40%, #bfbfbf 42%), radial-gradient(transparent 40%, #bfbfbf 42%), url(night-sky.jpg);
+    background-image: linear-gradient(0deg, #737373, #b0b0b0), radial-gradient(transparent 40%, #bfbfbf 42%), radial-gradient(transparent 40%, #bfbfbf 42%), url(night-sky.jpg);
+    background-blend-mode: overlay;
+  }
+  @-webkit-keyframes slide-6 {
+    from {
+      background-position: center, left, right, center 300px;
+    }
+    to {
+      background-position: center, left, right, -300px -50px center;
+    }
+  }
+  @keyframes slide-6 {
+    from {
+      background-position: center, left, right, center 300px;
+    }
+    to {
+      background-position: center, left, right, -300px -50px center;
+    }
+  }
+  .carousel__slice:nth-child(7) {
+    -webkit-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+    background-position: center, left, right, bottom -350px center;
+    -webkit-animation: slide-7 5s infinite;
+            animation: slide-7 5s infinite;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#a1a1a1), to(#7d7d7d)), radial-gradient(transparent 40%, #7d7d7d 42%), radial-gradient(transparent 40%, #7d7d7d 42%), url(night-sky.jpg);
+    background-image: linear-gradient(0deg, #a1a1a1, #7d7d7d), radial-gradient(transparent 40%, #7d7d7d 42%), radial-gradient(transparent 40%, #7d7d7d 42%), url(night-sky.jpg);
+    background-blend-mode: overlay;
+  }
+  @-webkit-keyframes slide-7 {
+    from {
+      background-position: center, left, right, center 350px;
+    }
+    to {
+      background-position: center, left, right, -350px -50px center;
+    }
+  }
+  @keyframes slide-7 {
+    from {
+      background-position: center, left, right, center 350px;
+    }
+    to {
+      background-position: center, left, right, -350px -50px center;
+    }
+  }
+  .carousel__slice:nth-child(8) {
+    -webkit-transform: rotateX(30deg);
+            transform: rotateX(30deg);
+    background-position: center, left, right, bottom -400px center;
+    -webkit-animation: slide-8 5s infinite;
+            animation: slide-8 5s infinite;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#7d7d7d), to(#545454)), radial-gradient(transparent 40%, #545454 42%), radial-gradient(transparent 40%, #545454 42%), url(night-sky.jpg);
+    background-image: linear-gradient(0deg, #7d7d7d, #545454), radial-gradient(transparent 40%, #545454 42%), radial-gradient(transparent 40%, #545454 42%), url(night-sky.jpg);
+    background-blend-mode: overlay;
+  }
+  @-webkit-keyframes slide-8 {
+    from {
+      background-position: center, left, right, center 400px;
+    }
+    to {
+      background-position: center, left, right, -400px -50px center;
+    }
+  }
+  @keyframes slide-8 {
+    from {
+      background-position: center, left, right, center 400px;
+    }
+    to {
+      background-position: center, left, right, -400px -50px center;
+    }
+  }
+  .carousel__slice:nth-child(9) {
+    -webkit-transform: rotateX(40deg);
+            transform: rotateX(40deg);
+    background-position: center, left, right, bottom -450px center;
+    -webkit-animation: slide-9 5s infinite;
+            animation: slide-9 5s infinite;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#545454), to(#262626)), radial-gradient(transparent 40%, #262626 42%), radial-gradient(transparent 40%, #262626 42%), url(night-sky.jpg);
+    background-image: linear-gradient(0deg, #545454, #262626), radial-gradient(transparent 40%, #262626 42%), radial-gradient(transparent 40%, #262626 42%), url(night-sky.jpg);
+    background-blend-mode: overlay;
+  }
+  @-webkit-keyframes slide-9 {
+    from {
+      background-position: center, left, right, center 450px;
+    }
+    to {
+      background-position: center, left, right, -450px -50px center;
+    }
+  }
+  @keyframes slide-9 {
+    from {
+      background-position: center, left, right, center 450px;
+    }
+    to {
+      background-position: center, left, right, -450px -50px center;
+    }
+  }
+  .carousel__slice:nth-child(10) {
+    -webkit-transform: rotateX(50deg);
+            transform: rotateX(50deg);
+    background-position: center, left, right, bottom -500px center;
+    -webkit-animation: slide-10 5s infinite;
+            animation: slide-10 5s infinite;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#262626), to(black)), radial-gradient(transparent 40%, black 42%), radial-gradient(transparent 40%, black 42%), url(night-sky.jpg);
+    background-image: linear-gradient(0deg, #262626, black), radial-gradient(transparent 40%, black 42%), radial-gradient(transparent 40%, black 42%), url(night-sky.jpg);
+    background-blend-mode: overlay;
+  }
+  @-webkit-keyframes slide-10 {
+    from {
+      background-position: center, left, right, center 500px;
+    }
+    to {
+      background-position: center, left, right, -500px -50px center;
+    }
+  }
+  @keyframes slide-10 {
+    from {
+      background-position: center, left, right, center 500px;
+    }
+    to {
+      background-position: center, left, right, -500px -50px center;
+    }
   }
 }
 /*# sourceMappingURL=carousel.css.map */

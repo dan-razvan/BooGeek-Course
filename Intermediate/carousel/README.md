@@ -1,4 +1,4 @@
 #  Carousel
 
 ## Gif Demo
-![carousel](carousel-rotating.gif)
+![carousel](image/carousel-rotating.gif)

@@ -22,7 +22,7 @@ class Element {
               for(let i = 0; i<this.children.length;i++){
                   console.log("aaa")
                   if(Object.is(child, this.children[i])) {
-                      this.children.splice(i,1)
+                      return this.children.splice(i,1)
                   }
               }
                

@@ -19,4 +19,4 @@ let findByClass = (root, className, arr = new Array()) => {
 } 
 
 let array = []
-console.log(findByClass(root, "div", array));
+console.log(findByClass(root, "dom", array));

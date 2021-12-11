@@ -1,5 +1,3 @@
-
-
 const findElementById = (root, id) => {
 
     if(id == root.id){
@@ -17,4 +15,5 @@ const findElementById = (root, id) => {
     return null
 }
 
-console.log(findElementById(root,"third-floor"))
+console.log(findElementById(root,"6"));
+ 

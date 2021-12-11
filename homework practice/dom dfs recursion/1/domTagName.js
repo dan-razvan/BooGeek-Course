@@ -1,36 +1,23 @@
 
 
-const findElementsByTagName = (root, tagName) => {
-    // console.log(`visiting ${root.childNodes[0].textContent.trim()}`)
-    // let tag = root.tagName.toLowerCase()
-    let arr = []
-    if(root.tagName.toLowerCase() == tagName) {
+const findElementsByTagName = (element, tagName, arr = new Array()) => {
     
-        arr.push(root.tagName)
-        console.log(arr)
-        if(arr.length == root.childNodes.length){
-            return arr
-        }
-    }
-    
+    let rootTag = root.tagName.toLowerCase()
+    if(rootTag == tagName) {
 
-    for(let i = 0; i< root.children.length; i++){
-        let foundArr = findElementsByTagName(root.children[i], tagName)
+        // console.log(`visiting ${element.childNodes[0].textContent.trim()}`)
 
-        if(foundArr){
-            foundArr.push(root.children[i])
-            if(foundArr.length == root.childNodes.length){
-                console.log("i")
-                return foundArr
-            }
-
-            
-        }
+        arr.push(rootTag)
     }
 
+    for(let i = 0; i< element.children.length; i++){
+        let foundArr = findElementsByTagName(element.children[i], tagName, arr)
+
+    }
     
+    return arr
+
 }
 
-
-debugger;
-console.log(findElementsByTagName(root, "div"))
+let array =[]
+console.log(findElementsByTagName(root, "div", array));

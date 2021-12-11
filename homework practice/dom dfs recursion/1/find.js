@@ -1,15 +1,11 @@
 const find = (element, what) => {
-    // console.log(element)
+
     let content = element.childNodes[0].textContent.trim()
     // console.log(element.childNodes[0])
     console.log(
         `visiting '${content}'`
         
     )
-    // console.log(element)
-    
-
-
 
 
     if(what == content) {
@@ -29,7 +25,7 @@ const find = (element, what) => {
     // })
 
     for(let index = 0; index < element.children.length; index++) {
-        let found = find(element.children[index], what)
+        let found = find(element.children[index], what);
         // console.log("a"+element.children[index])
         if(found != undefined) {
             return found;

@@ -11,9 +11,15 @@ let findByClass = (root, className, arr = new Array()) => {
 
     } 
 
-    for(let i = 0; i< root.children.length; i++) {
-        let foundClass = findByClass(root.children[i], className,arr)
-    }
+    // for(let i = 0; i< root.children.length; i++) {
+    //     let foundClass = findByClass(root.children[i], className,arr)
+    // }
+
+    let children = [...root.children]
+
+    children.forEach(child => {
+        findByClass(child, className, arr)
+    })
 
     return arr
 } 

@@ -10,10 +10,16 @@ const findElementsByTagName = (element, tagName, arr = new Array()) => {
         arr.push(rootTag)
     }
 
-    for(let i = 0; i< element.children.length; i++){
-        let foundArr = findElementsByTagName(element.children[i], tagName, arr)
+    // for(let i = 0; i< element.children.length; i++){
+    //     let foundArr = findElementsByTagName(element.children[i], tagName, arr)
 
-    }
+    // }
+
+    let tagChildren = [...element.children]
+
+    tagChildren.forEach(child => {
+        findElementsByTagName(child, tagName, arr)
+    })
     
     return arr
 

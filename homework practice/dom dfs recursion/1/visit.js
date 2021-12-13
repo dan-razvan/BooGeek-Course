@@ -13,6 +13,7 @@ const visit = (element) => {
     // }
 
     let childrenList = [...element.children]
+    // let childrenList = Object.keys(element.children)
     childrenList.forEach((child) => {
         visit(child)
     })

@@ -1,4 +1,4 @@
-let findByClass = (root, className, arr = new Array()) => {
+let findByClass = (root, className) => {
 
     
     if(root.className.length > className.length 
@@ -6,7 +6,7 @@ let findByClass = (root, className, arr = new Array()) => {
         root.className = root.className.slice(0, className.length)
     }
     if(root.className == className){
-        arr.push(root.className)
+        array.push(root.className)
 
 
     } 
@@ -18,10 +18,10 @@ let findByClass = (root, className, arr = new Array()) => {
     let children = [...root.children]
 
     children.forEach(child => {
-        findByClass(child, className, arr)
+        findByClass(child, className)
     })
 
-    return arr
+    return array
 } 
 
 let array = []

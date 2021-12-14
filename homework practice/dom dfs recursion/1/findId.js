@@ -9,24 +9,21 @@ const findElementById = (root, id) => {
     //     let foundId = findElementById(root.children[i], id)
 
     //     if(foundId != undefined) {
-    //     console.log("aa")
     //         return foundId
     //     }
     // }
-    let children = [...root.children]
-    children.forEach(child => {
-        
-        let foundId = findElementById(child, id)
-        
-        if(foundId != undefined){
-            console.log(foundId)
-            // aceeasi treaba ca si la find.js. Ceva misterios la mijloc
-            return foundId
-        }
-    })
 
-    return null
+    let foundId = null
+    let children = [...root.children]
+    children.forEach(child => 
+        
+        foundId = findElementById(child, id) ?? foundId
+    );
+
+    return foundId
 }
 
-console.log(findElementById(root,"6"));
+let found = findElementById(root,"4")
+
+console.log(`Found in `, found);
  

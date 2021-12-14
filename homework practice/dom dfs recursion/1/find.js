@@ -13,18 +13,16 @@ const find = (element, what) => {
         return element;
         
     }
+    let found = null;
     let childrenList = [...element.children]
 
     childrenList.forEach(child => {
         // console.log(child)
-        let found = find(child, what)
-
-        if(found != undefined) {
-            console.log("1")
-            return found;
-            return found;
-        }
+        let foundLocal = find(child, what)
+        found = foundLocal ?? found
+    
     })
+    return found;
 
 //     for(let index = 0; index < element.children.length; index++) {
 //         let found = find(element.children[index], what);

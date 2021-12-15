@@ -14,7 +14,7 @@ h3{
 
 .container {
     background-color: rgb(19, 71, 71);
-    height: 510px;
+    height: 610px;
     width: 460px;
     position: relative;
     border-radius: 4%;
@@ -52,7 +52,7 @@ form {
 }
 .together{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -84,7 +84,7 @@ form {
     color: #fff;
     background-color:rgb(118, 202, 202);
     height: 50px;
-    width: 120px;
+    width: 80%;
 }
 
 
@@ -111,7 +111,7 @@ form {
     letter-spacing: 5px;
     color: #fff;
     width: 80%;
-    height: 30px;
+    height: 40px;
     margin-top: 40px;
     padding:5px;
     left: 46px;

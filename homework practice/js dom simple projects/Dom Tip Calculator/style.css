@@ -1,0 +1,121 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    color: #fff;
+    background-color: rgb(195, 252, 252);
+}
+
+h3{
+    position: relative;
+    left: 10%;
+}
+
+.container {
+    background-color: rgb(19, 71, 71);
+    height: 510px;
+    width: 460px;
+    position: relative;
+    border-radius: 4%;
+    position: relative;
+    top: 170px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* position:static; */
+}
+
+.bill{
+    padding: 15px;
+    font-size: 1.5rem;
+    position: relative;
+    left: 9%
+    
+}
+
+.bill-input{
+    padding:15px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family:monospace;
+    /* border-radius: 5px; */
+    background-color: rgb(118, 202, 202);
+    border: none;
+    width: 75%;
+    position: relative;
+    left: 10%
+}
+.together{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.radio-div{
+    display: flex;
+    justify-content:space-around;
+    
+    flex-direction: column
+
+}
+
+.radio-label {
+    position: relative;
+    left: 10%;
+    font-size: 1rem;
+
+}
+
+*:focus{
+    outline: none;
+}
+
+.select {
+    font-size: 1rem;
+    font-family: monospace;
+    position: relative;
+    left: 10%;
+    top: 5%;
+    color: #fff;
+    background-color:rgb(118, 202, 202);
+    height: 50px;
+    width: 120px;
+}
+
+
+.display-tip {
+    height: 100px;
+    width: 80%;
+    position: absolute;
+    margin-top: 100px;
+    left: 10%;
+    background-color:rgb(118, 202, 202);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+#calculate{
+    position: absolute;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 5px;
+    color: #fff;
+    width: 80%;
+    height: 30px;
+    margin-top: 40px;
+    padding:5px;
+    left: 46px;
+    background-color: rgb(118, 202, 202);
+    
+}
+

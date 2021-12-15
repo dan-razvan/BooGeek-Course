@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="input">
+            <form action="">
+                <label class="bill" for="bill-input">BILL AMOUNT </label>
+                <input id="bill-input" class="bill-input" type="text" name="bill-input">
+                 
+                <div class="together">
+                    
+                    <div class="radio-div">
+                        <h3>SERVICE QUALITY</h3>
+                        
+                        <label class="radio-label" for="outstanding" >
+                            <input class="radio" type="radio" name="service-level" id="outstanding">Outstanding
+                            </label>
+                        <label class="radio-label" for="good">
+                            <input class="radio" type="radio" name="service-level" id="good">Good
+                        </label>
+                    
+                        <label class="radio-label" for="okish">
+                            <input class="radio" type="radio" name="service-level" id="okish">OKish
+                        </label>
+                        <label class="radio-label" for="bad">
+                            <input class="radio" type="radio" name="service-level" id="bad">Bad
+                        </label>
+                    
+                        <label class="radio-label" for="never">
+                            <input class="radio" type="radio" name="service-level" id="never">Never coming back
+                        </label>
+                    </div>
+
+                    <div class="persons">
+                        <h3>No OF PERSONS</h3>
+                        <select id="number-of" class="select" name="number-of-persons">
+                            <!-- <option disabled selected>No</option> -->
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+            </form>
+            <button id="calculate">CALCULATE</button>
+        </div>
+        
+
+        <div class="display-tip"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

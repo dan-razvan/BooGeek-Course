@@ -2,4 +2,4 @@
 
 ## Gif Demo
 
-![tip-calculator](gif/tip-calculator.gif)
+![tip-calculator](gif/dom-tip-calc.gif)

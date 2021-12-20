@@ -13,12 +13,9 @@ body{
     position: relative;
 }
 
-.quote-container{
-    /* border: 1px solid black; */
-    height: 20%;
-    width: 98%;
+.quote-container{   
+    width: 48%;
     margin-bottom: 50px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,27 +24,31 @@ body{
 }
 
 #quote {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: sans-serif;
     margin-bottom: 1rem;
-    padding: 50px;
+    color: #444;
+    padding: 20px;
+    
+    background: linear-gradient( #fff 99%, #000 99%);
 }
 
-.line {
-    height: 0;
-    width: 20%;
-    border: 1px solid #777;
-
-}
 #author {
     margin-top: 1rem;
     font-size: 1.5rem;
     font-style: italic;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;;
+    
     
 }
 button {
     padding: 10px 15px;
     text-transform: uppercase;
     letter-spacing: .5px;
-    border-radius: 5px;
+    border-radius: 1px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3) 
     
 }

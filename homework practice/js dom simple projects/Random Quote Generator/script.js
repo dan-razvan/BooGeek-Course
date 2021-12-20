@@ -3,27 +3,59 @@ const quote = document.getElementById("quote")
 const author = document.getElementById("author")
 const button = document.getElementById("button")
 
+// const quotes = [
+//     {
+//         "Nelson Mandela": "The greatest glory in living lies not in never falling, but in rising every time we fall."
+//     },
+//     {
+//         "James Cameron": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success."
+//     },
+//     {
+//         "Robert Louis Stevenson": "Don't judge each day by the harvest you reap but by the seeds that you plant."
+//     },
+//     {
+//         "Benjamin Franklin": "Tell me and I forget. Teach me and I remember. Involve me and I learn."
+//     },
+//     {
+//         "Abraham Lincoln": "In the end, it's not the years in your life that count. It's the life in your years."
+//     },
+//     {
+//         "Thomas A. Edison": "Many of life's failures are people who did not realize how close they were to success when they gave up."
+//     },
+//     {
+//         "Franklin D. Roosevelt": "The only limit to our realization of tomorrow will be our doubts of today"
+//     },
+
+// ]
+
 const quotes = [
     {
-        "Nelson Mandela": "The greatest glory in living lies not in never falling, but in rising every time we fall."
+        quote: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+        author: "Nelson Mandela"
     },
     {
-        "James Cameron": "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success."
+        quote: "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
+        author: "James Cameron"
     },
     {
-        "Robert Louis Stevenson": "Don't judge each day by the harvest you reap but by the seeds that you plant."
+        quote: "Don't judge each day by the harvest you reap but by the seeds that you plant.",
+        author: "Robert Louis Stevenson"
     },
     {
-        "Benjamin Franklin": "Tell me and I forget. Teach me and I remember. Involve me and I learn."
+        quote: "Tell me and I forget. Teach me and I remember. Involve me and I learn.",
+        author: "Benjamin Franklin"
     },
     {
-        "Abraham Lincoln": "In the end, it's not the years in your life that count. It's the life in your years."
+        quote: "In the end, it's not the years in your life that count. It's the life in your years.",
+        author: "Abraham Lincoln"
     },
     {
-        "Thomas A. Edison": "Many of life's failures are people who did not realize how close they were to success when they gave up."
+        quote: "Many of life's failures are people who did not realize how close they were to success when they gave up.",
+        author: "Thomas A. Edison"
     },
     {
-        "Franklin D. Roosevelt": "The only limit to our realization of tomorrow will be our doubts of today"
+        quote:  "The only limit to our realization of tomorrow will be our doubts of today",
+        author: "Franklin D. Roosevelt"
     },
 
 ]
@@ -35,6 +67,6 @@ const getRandom = (arr) => {
 button.addEventListener("click", () => {
     let random  = getRandom(quotes)
     // quote.removeChild()
-    quote.textContent =  Object.values(quotes[random])
-    author.innerHTML = Object.keys(quotes[random]) 
+    quote.innerHTML =  `${quotes[random].quote}`
+    author.innerHTML = `${quotes[random].author}`
 })

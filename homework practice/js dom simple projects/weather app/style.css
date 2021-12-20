@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid black;
+    
+    
+    width: 250px;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+h2{
+    color: darkslategray;
+}
+
+.output {
+    padding: 5px;
+    
+}
+
+input {
+    border: none;
+    margin-bottom: 10px;
+}
+
+#submit {
+    background-color: darkslategray;
+    color: #fff;
+}
+

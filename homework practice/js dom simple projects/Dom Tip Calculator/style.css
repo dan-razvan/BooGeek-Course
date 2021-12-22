@@ -7,9 +7,15 @@ body{
     background-color: rgb(195, 252, 252);
 }
 
+.bill-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
 h3{
     position: relative;
     left: 10%;
+    font-size: 1.1rem;
 }
 
 .container {
@@ -49,6 +55,7 @@ form {
     width: 75%;
     position: relative;
     left: 10%
+    
 }
 .together{
     display: flex;
@@ -64,16 +71,42 @@ form {
 
 }
 
+/* .radio:checked:after{
+    background-color:#bfb;
+    border-color: #4c4;
+} */
+
 .radio-label {
     position: relative;
     left: 10%;
-    font-size: 1rem;
+    font-size: 1.1rem;
 
+}
+
+.radio:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    background-color: rgb(85, 168, 168);
+    display: inline-block;
+    border: 2px solid white;
+}
+
+.radio:checked:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    background-color: rgb(19, 71, 71);
+    /* display: inline-block; */
+    border: 2px solid white;
 }
 
 *:focus{
     outline: none;
 }
+
 
 .select {
     font-size: 1rem;
@@ -82,9 +115,14 @@ form {
     left: 10%;
     top: 5%;
     color: #fff;
-    background-color:rgb(118, 202, 202);
+    background-color:rgb(85, 168, 168);
     height: 50px;
     width: 80%;
+    border: none;
+}
+
+select:hover{
+    
 }
 
 
@@ -94,7 +132,7 @@ form {
     position: absolute;
     margin-top: 100px;
     left: 10%;
-    background-color:rgb(118, 202, 202);
+    background-color:rgb(85, 168, 168);
     font-size: 3rem;
     display: flex;
     align-items: center;
@@ -115,7 +153,7 @@ form {
     margin-top: 40px;
     padding:5px;
     left: 46px;
-    background-color: rgb(118, 202, 202);
+    background-color: rgb(85, 168, 168);
     
 }
 

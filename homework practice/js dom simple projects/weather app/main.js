@@ -1,6 +1,7 @@
 
-const loadData = (cb) => {
+const loadDataFromAPI = (cb) => {
     let xhr = new XMLHttpRequest();
+    // console.log(JSON.parse(xhr.responseText))
 
     xhr.open(
         "GET", 
@@ -16,6 +17,38 @@ const loadData = (cb) => {
     }
 }
 
+// manages data
+const load = (cb) => {
+    // 1.check the cache
+    let data = null
+    let timestamp = new Date().getHours()
+    if(checkDataCache(`data-${timestamp}-${inputValue.value}`)) {
+        // 2. take from cache
+        data = loadDataFromCache(`data-${timestamp}-${inputValue.value}`)
+        cb(data)
+    }else {
+        // 3. take from API
+        loadDataFromAPI((data) => {
+            saveDataToCache(`data-${timestamp}-${inputValue.value}`, data)
+            cb(data)
+        })
+    }
+    
+}
+
+const saveDataToCache = (key, data) => {
+    localStorage.setItem(key, JSON.stringify(data))
+}
+
+const loadDataFromCache = (key) => {
+    return JSON.parse(localStorage.getItem(key))
+}
+
+const checkDataCache = (key) => {
+    return JSON.parse(localStorage.getItem(key))
+}
+
+
 
 const render = (data) => {
     let temp = document.getElementById("temperature")
@@ -25,16 +58,28 @@ const render = (data) => {
     temp.innerHTML= ` Temperature = <span>${data.main.temp}</span>`
     airHumidity.innerHTML= `Air humidity = <span>${data.main.humidity}</span>`
     windSpeed.innerHTML= `Wind speed = <span>${data.wind.speed }</span>`
+
+    // saveDataToCache(data)
 }
 
 const submitButton = document.getElementById("submit")
 const inputValue = document.getElementById("input")
+// const inputCalc = document.getElementById("sort")
 
 submitButton.addEventListener("click", (e) => {
     e.preventDefault()
     if(inputValue.value) {
-        loadData(render)
+        load(render)
+        // loadDataFromAPI(render)
+        
+    
     }
 })
 
 
+// load()
+
+
+// loadDataFromAPI(render)
+
+// ${inputValue.value}

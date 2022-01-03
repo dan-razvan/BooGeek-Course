@@ -21,15 +21,16 @@ const loadDataFromAPI = (cb) => {
 const load = (cb) => {
     // 1.check the cache
     let data = null
-    let timestamp = new Date().getHours()
-    if(checkDataCache(`data-${timestamp}-${inputValue.value}`)) {
+    let timeHours = new Date().getHours()
+    let timeDate = new Date().getDate()
+    if(checkDataCache(`data-${timeDate}-${timeHours}-${inputValue.value}`)) {
         // 2. take from cache
-        data = loadDataFromCache(`data-${timestamp}-${inputValue.value}`)
+        data = loadDataFromCache(`data-${timeDate}-${timeHours}-${inputValue.value}`)
         cb(data)
     }else {
         // 3. take from API
         loadDataFromAPI((data) => {
-            saveDataToCache(`data-${timestamp}-${inputValue.value}`, data)
+            saveDataToCache(`data-${timeDate}-${timeHours}-${inputValue.value}`, data)
             cb(data)
         })
     }

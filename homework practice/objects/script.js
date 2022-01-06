@@ -36,7 +36,9 @@ class NumberProvider {
                 this.positiveCB(number)
                 
             }
-            /* 3. ??? */
+            else {
+                this.negativeCB(number)
+            }
         },1000)
     }
 

@@ -15,7 +15,12 @@ const formSubmit = submit.addEventListener("click",(e) => {
 const loadData = (cb) => {
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=50f5fce0632d826ec7e4875d23c17ac1&units=metric`)
-    .then((response) => response.json())
+    .then((response) => {
+        if(!response.ok) {
+            throw new Error("CITY NOT FOUND! Try again!")
+        }
+        return response.json()
+    } )
     .then(data => cb(data))
     .catch(err=>{
         renderError(`Something went wrong: ${err} `)

@@ -18,9 +18,8 @@ class TMDBService {
     get (options) {
         let request = new XMLHttpRequest();
         
-        //aici am concatenat url-ul din constructor, 
-        request.open(options.method, this.baseUrl+options.url+"?api_key="+this.accessKey)
-        console.log(this.baseUrl+"?api_key="+this.accessKey)
+        //aici am concatenat astfel incat sa nu primesc eroare si desi primesc un rezultat, nu cred ca e cel dorit
+        request.open(options.method, `${this.baseUrl}${options.url}?api_key=${this.accessKey}`)
         request.send()
 
         request.onload = () => {

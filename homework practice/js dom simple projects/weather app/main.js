@@ -10,7 +10,7 @@ const loadDataFromAPI = (cb) => {
     
 
     xhr.send()
-    xhr.onload = () => {
+    xhr.onload = (cb) => {
         let data = JSON.parse(xhr.responseText)
         console.log(">>", data)
         cb(data)

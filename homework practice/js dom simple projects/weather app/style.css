@@ -4,12 +4,17 @@ body{
 }
 
 .container {
-    border: 1px solid black;
     
-    
+    box-shadow: 1px 1px 6px #777;
+    transition: 0.4s linear;
     width: 250px;
     padding: 20px;
     background-color: antiquewhite;
+}
+
+.container:hover {
+    box-shadow: 1px 1px 4px #999;
+    transition: 0.2s ease-in-out;
 }
 
 h2{

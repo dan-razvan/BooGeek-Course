@@ -23,7 +23,7 @@ const loadData = (cb) => {
     } )
     .then(data => cb(data))
     .catch(err=>{
-        renderError(`Something went wrong: ${err} `)
+        renderError(`Something went wrong: ${err.message} `)
     })
     
 }

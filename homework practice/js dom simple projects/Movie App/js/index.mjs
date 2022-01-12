@@ -1,14 +1,14 @@
-// main module / entry point
 
-import TMDBService from "./services/TMDBService.mjs"
-
-
-let tmdbs = new TMDBService()
+import {tmdbs, ss} from "./boot.mjs"
 
 tmdbs.getMovies()
 
 tmdbs.get({
     url: "/movie/latest",
     method: "GET",
-    onSuccess: (data) => {console.log(data)}
+    onSuccess: (data) => {
+        // console.log(data)
+        
+        ss.set({url:"/movie/popular",data})
+        }
 })

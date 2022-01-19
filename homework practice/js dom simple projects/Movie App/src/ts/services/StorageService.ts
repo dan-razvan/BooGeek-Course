@@ -3,13 +3,13 @@ class StorageService {
 
 
 
-    get (options) {
+    get ({url}) {
         return JSON.parse(localStorage.getItem(url))
         
     }
 
     set({url, data}) {
-        localStorage.setItem( url, JSON.stringify(data))
+        localStorage.setItem(url, JSON.stringify(data))
     }
 }
 

@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)
+  );
+}
+
+.poster-content {
+  height: 100%;
+
+  z-index:10;
+}
+
+.movie-details {
+  width: 400px;
+  line-height: 1.4;
+  margin-top: 10px;
+  color: #fff;
+  padding: 0 10px;
+  
+}
+
+.title, .rating, .year {
+  padding-left: 10px; 
+  margin-bottom: 10px;
+}
+
+.the-poster{
+  width: 400px;
+}
+
+img {
+  border-radius: 10px;;
+}
+
+.arrow {
+  cursor: pointer;
+  background-color: rgba(76, 94, 112, 0.7);
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  
+}
+
+.left-arrow-container {
+  margin-right: -25px;
+  visibility: visible;
+  
+  
+}
+.right-arrow-container {
+  margin-left: -25px;
+  visibility: visible;
+}
+
+
+.arrow > i {
+  color:#fff;
+  /* filter:drop-shadow(1px 1px 2px #444); */
+  font-size: 40px;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  /* z-index:-1; */
+
+
+}
+
+.left-arrow {
+   left: 12px;
+   top: 4px;
+}
+.right-arrow {
+   right: 12px;
+   top: 4px;
+}

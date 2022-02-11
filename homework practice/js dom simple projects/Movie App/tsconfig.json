@@ -1,12 +1,13 @@
+
 {
   "compilerOptions": {
-      "target": "es6",
-      "noImplicitAny": false,
-      "outDir": "./dist", //output directory
-      // "outFile": "./dist/index.mjs", 
-      "rootDir": ".",
-      "sourceMap": false
+    "target": "es6",
+    "noImplicitAny": false,
+    "outDir": "./dist",
+    // "outFile": "./dist/index.mjs",
+    "rootDir": ".",
+    "sourceMap": false
   },
-  "include": ["src/**/*"], // din source (**/* = orice subfolder si file)
-  "exclude": [],
+  "include": ["src/**/*"],
+  "exclude": []
 }
